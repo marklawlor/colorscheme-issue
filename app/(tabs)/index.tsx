@@ -15,7 +15,12 @@ export default function TabOneScreen() {
           Appearance.setColorScheme(colorScheme === "light" ? "dark" : "light");
         }}
       >
-        Current color scheme is {colorScheme} and you have pressed {clicks}.
+        Current: {colorScheme}
+        {"\n"}
+        Expected: {clicks % 2 === 0 ? "light" : "dark"}
+        {"\n"}
+        Clicks: {clicks}
+        {"\n"}
         Press to toggle.
       </Text>
     </View>
